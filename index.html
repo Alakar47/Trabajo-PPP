@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zampedri Motomecánica | Taller de Motos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="site">
+    <header>
+        <a class="brand" href="#inicio">
+            <img src="img/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+            <span>ZAMPEDRI <small>MOTOMECÁNICA</small></span>
+        </a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#productos">Productos</a>
+            <a href="#turnos">Turnos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#" id="btn-admin" class="btn-nav-admin">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h1>Zampedri Taller de Motos</h1>
+            <p>Servicio de mecánica integral en general. Reparación especializada y mantenimiento preventivo en Los Charrúas.</p>
+            <div class="actions">
+                <a class="btn red" href="#turnos">Solicitar Turno</a>
+                <a class="btn black" href="#servicios">Ver Servicios</a>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="section-heading">
+                <h2>Galería del Taller</h2>
+                <p>Instalaciones y trabajos realizados en Zampedri Motomecánica.</p>
+            </div>
+
+            <div class="carousel-wrap">
+                <div class="carousel" id="carousel-galeria">
+                    <div class="carousel-track" id="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="img/taller-1.svg" alt="Taller 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/taller-2.svg" alt="Taller 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/taller-3.svg" alt="Taller 3">
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Anterior">&#10094;</button>
+                    <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Siguiente">&#10095;</button>
+                    <div class="carousel-dots" id="carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="servicios">
+            <div class="section-heading">
+                <h2>Servicio de Mecánica</h2>
+                <div class="linea-roja"></div>
+                <p>Trabajamos con distintas marcas: Zanella, Gilera, Honda, Yamaha, Rouser, Guerrero, Cerro y más.</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Carburación y Transmisión</h3>
+                    <p>Limpieza, ajuste y puesta a punto de carburador, transmisión y embrague para que tu moto rinda al 100%.</p>
+                    <span class="service-tag">Desde $6.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Rectificación y Motor</h3>
+                    <p>Rectificación integral de cilindros, regulación de válvulas, cambio de pistones y puesta a punto del motor.</p>
+                    <span class="service-tag">Desde $12.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Servicio General</h3>
+                    <p>Cambio de aceite, filtros, revisión de frenos, batería, suspensión y revisión general de seguridad.</p>
+                    <span class="service-tag">Desde $4.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⛓️</div>
+                    <h3>Distribución y Cadena</h3>
+                    <p>Cambio de kit de distribución, piñones, corona y cadena. Ajuste y tensado de transmisión.</p>
+                    <span class="service-tag">Desde $8.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔋</div>
+                    <h3>Electricidad y Encendido</h3>
+                    <p>Reparación de sistemas de encendido, bobinas, bujías, batería, luces y cableado eléctrico.</p>
+                    <span class="service-tag">Desde $5.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛞</div>
+                    <h3>Neumáticos y Ruedas</h3>
+                    <p>Cambio de cámaras, cubiertas, balanceo, alineación y revisión de frenos de disco y tambor.</p>
+                    <span class="service-tag">Desde $3.000</span>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="products" id="productos">
+            <div class="section-heading">
+                <h2>Catálogo de Productos</h2>
+                <div class="linea-roja"></div>
+                <p>Insumos y repuestos disponibles en el taller.</p>
+            </div>
+
+            <div class="catalogo-contenedor product-grid" id="lista-productos">
+                
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-1.svg" alt="Aceite Castrol Actevo 4T" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Castrol Actevo 4T 20W-50</h3>
+                        <span class="precio">$18.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-2.svg" alt="Aceite Motul 5100" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Motul 5100 4T Semisintético</h3>
+                        <span class="precio">$35.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-3.svg" alt="Aceite Yamalube 2T" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Yamalube 2T 1 litro</h3>
+                        <span class="precio">$15.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-4.svg" alt="Bujía NGK C7HSA" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Bujía NGK C7HSA</h3>
+                        <span class="precio">$8.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-5.svg" alt="Filtro de aceite para moto" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro de aceite para moto</h3>
+                        <span class="precio">$14.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-6.svg" alt="Lubricante para cadena de moto" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Lubricante para cadena de moto</h3>
+                        <span class="precio">$25.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-7.svg" alt="Grasa Penetrit" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Grasa lubricante para cadena Penetrit</h3>
+                        <span class="precio">$10.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-8.svg" alt="Limpiador de cadena para moto" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Limpiador de cadena (desengrasante aerosol)</h3>
+                        <span class="precio">$15.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-9.svg" alt="Líquido de frenos DOT 4" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Líquido de frenos DOT 4</h3>
+                        <span class="precio">$18.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-10.svg" alt="Pastillas de freno para moto" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Pastillas de freno para moto</h3>
+                        <span class="precio">$30.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-11.svg" alt="Filtro de nafta universal" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro de nafta universal</h3>
+                        <span class="precio">$5.000</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img/prod-12.svg" alt="Cámara de aire rodado 18" onerror="this.style.opacity='0.2'">
+                        
+                    </div>
+                    <div class="product-info">
+                        <h3>Cámara de aire para moto rodado 18</h3>
+                        <span class="precio">$13.000</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="booking" id="turnos">
+            <div class="section-heading">
+                <h2>Solicitar Turno</h2>
+                <p>Complete el formulario con los datos de su vehículo para reservar un turno.</p>
+            </div>
+            <div class="form-wrap">
+                <form id="form-turno">
+                    <div class="field"><label>Nombre</label><input id="nombre" required placeholder="Juan Pérez"></div>
+                    <div class="field"><label>Teléfono</label><input id="telefono" type="tel" required placeholder="345123456"></div>
+                    <div class="field"><label>Moto y Marca</label><input id="moto" required placeholder="Honda CG 150"></div>
+                    <div class="field">
+                        <label>Servicio</label>
+                        <select id="servicio" required>
+                            <option value="" disabled selected>Seleccione...</option>
+                            <option value="Carburación">Carburación</option>
+                            <option value="Motor">Motor</option>
+                            <option value="General">General</option>
+                        </select>
+                    </div>
+                    <div class="field full"><label>Detalle</label><textarea id="detalle" placeholder="Problema..."></textarea></div>
+                    <div class="form-bottom"><button class="btn red" type="submit">Reservar Turno</button></div>
+                </form>
+                <p class="mensaje-ok" id="mensaje-turno">¡Turno enviado con éxito!</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="ventana-admin" class="modal">
+        <div class="modal-caja admin-panel">
+            <div class="modal-top">
+                <h3>Administrar Catálogo</h3>
+                <button id="cerrar-admin" class="btn-x">X</button>
+            </div>
+
+            <div class="admin-section">
+                <h4>Agregar Producto Nuevo</h4>
+                <form id="form-agregar">
+                    <div class="field"><label>Nombre del Producto</label><input type="text" id="nuevo-nombre" required placeholder="Ej: Pastillas de Freno"></div>
+                    <div class="field"><label>Precio ($)</label><input type="number" id="nuevo-precio" required placeholder="30000"></div>
+                    <div class="field"><label>Ruta de la Imagen</label><input type="text" id="nueva-imagen" required placeholder="img/prod-13.svg"></div>
+                    <div class="form-bottom"><button type="submit" class="btn red">+ Agregar Producto</button></div>
+                </form>
+            </div>
+
+            <hr class="separador">
+
+            <div class="admin-section">
+                <h4>Productos del Catálogo</h4>
+                <div id="lista-admin" class="lista-admin"></div>
+                <div class="form-bottom"><button type="button" id="btn-vaciar-catalogo" class="btn black" style="width:100%;">Vaciar catálogo (borrar todos)</button></div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <p>Ubicación y Contacto</p>
+        <p>Av. Francisco Ramírez 2158 – Los Charrúas, Entre Ríos</p>
+        <p>Tel: 345 123-4567 · horarios: Lunes a Sábado 8:00 a 19:00 hs</p>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.5!2d-58.2623!3d-31.6451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7c6e2a1b2c3d4%3A0x8f2a1b4c5d6e7f8!2sZampedri%20Motomec%C3%A1nica!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar"
+                width="100%"
+                height="200"
+                style="border:0;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen=""
+                aria-label="Ubicación del taller en Los Charrúas, Entre Ríos"
+            ></iframe>
+        </div>
+        <div class="redes">
+            <p>Síganos:</p>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+        <p style="margin-top:15px; font-size:11px;">© 2026 Zampedri Motomecánica – Todos los derechos reservados</p>
+    </footer>
+</div>
+
+</body>
+</html>
